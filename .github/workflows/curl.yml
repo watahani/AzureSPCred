@@ -8,6 +8,7 @@ jobs:
     permissions:
       id-token: write
       contents: read
+    environment: development
     steps:
       - run: sleep 5 # there's still a race condition for now
       - name: Aquire ID Token
