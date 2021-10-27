@@ -14,6 +14,7 @@ jobs:
       # ubuntu Az CLI installation 
       - name: Install CLI-beta
         run: |
+           env
            cd ../..
            CWD="$(pwd)"
            python3 -m venv oidc-venv
